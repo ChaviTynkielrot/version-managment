@@ -23,10 +23,10 @@ jobs:
 
       - name: Update package version tags
         env:
-          PACKAGE_A_VERSION: v1.0.0 
-          PACKAGE_B_VERSION: v1.0.0
-          PACKAGE_C_VERSION: v1.0.0
-          PACKAGE_D_VERSION: v1.0.0
+          PACKAGE_A_VERSION: A-v1.0.0 
+          PACKAGE_B_VERSION: B-v1.0.0
+          PACKAGE_C_VERSION: C-v1.0.0
+          PACKAGE_D_VERSION: D-v1.0.0
         run: |
           git config --local user.email "chavit@skyvar.co.il"
           git config --local user.name "ChaviTynkielrot"
