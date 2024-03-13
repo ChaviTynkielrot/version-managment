@@ -25,11 +25,20 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           PACKAGE_A_VERSION: v1.0.0 
+          PACKAGE_B_VERSION: v1.0.0
+          PACKAGE_C_VERSION: v1.0.0
+          PACKAGE_D_VERSION: v1.0.0
         run: |
           git config --local user.email "chavit@skyvar.co.il"
           git config --local user.name "ChaviTynkielrot"
           git tag $PACKAGE_A_VERSION -f
+          git tag $PACKAGE_B_VERSION -f
+          git tag $PACKAGE_C_VERSION -f
+          git tag $PACKAGE_D_VERSION -f
           git push origin $PACKAGE_A_VERSION -f
+          git push origin $PACKAGE_B_VERSION -f
+          git push origin $PACKAGE_C_VERSION -f
+          git push origin $PACKAGE_D_VERSION -f
 
 
       # - name: Create repository release
