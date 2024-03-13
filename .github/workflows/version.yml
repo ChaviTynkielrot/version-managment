@@ -10,7 +10,7 @@ jobs:
   manage_versions:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
     steps:
       - name: Checkout code
@@ -27,8 +27,8 @@ jobs:
           # For example, increment versions if a change is detected
 
       - name: Update package version tags
-        # env:
-        #   GITHUB_TOKEN: ${{ github.token }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           git config --local user.email "chavit@skyvar.co.il"
           git config --local user.name "ChaviTynkielrot"
