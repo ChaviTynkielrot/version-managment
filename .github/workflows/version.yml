@@ -29,8 +29,8 @@ jobs:
         run: |
           git config --local user.email "chavit@skyvar.co.il"
           git config --local user.name "ChaviTynkielrot"
-          git tag $PACKAGE_A_VERSION -f
-          git push origin $PACKAGE_A_VERSION -f
+          git tag $PACKAGE_A_VERSION 
+          git push origin $PACKAGE_A_VERSION 
 
 
       # - name: Create repository release
