@@ -26,14 +26,14 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git tag $PACKAGE_A_VERSION -f
-          git tag $PACKAGE_B_VERSION -f
-          git tag $PACKAGE_C_VERSION -f
-          git tag $PACKAGE_D_VERSION -f
-          git push origin $PACKAGE_A_VERSION -f
-          git push origin $PACKAGE_B_VERSION -f
-          git push origin $PACKAGE_C_VERSION -f
-          git push origin $PACKAGE_D_VERSION -f
+          git tag $PACKAGE_A_VERSION 
+          git tag $PACKAGE_B_VERSION 
+          git tag $PACKAGE_C_VERSION 
+          git tag $PACKAGE_D_VERSION 
+          git push origin $PACKAGE_A_VERSION 
+          git push origin $PACKAGE_B_VERSION 
+          git push origin $PACKAGE_C_VERSION 
+          git push origin $PACKAGE_D_VERSION 
 
       # - name: Create repository release
       #   env:
