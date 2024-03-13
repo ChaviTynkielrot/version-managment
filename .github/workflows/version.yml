@@ -6,6 +6,7 @@ on:
       - main
 
 jobs:
+
   manage_versions:
     runs-on: ubuntu-latest
     permissions:
