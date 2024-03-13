@@ -27,8 +27,8 @@ jobs:
           # For example, increment versions if a change is detected
 
       - name: Update package version tags
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           git config --local user.email "chavit@skyvar.co.il"
           git config --local user.name "ChaviTynkielrot"
