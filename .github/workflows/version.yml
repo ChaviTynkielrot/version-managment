@@ -27,8 +27,8 @@ jobs:
 
       - name: Update package version tags
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "chavit@skyvar.co.il"
+          git config --local user.name "ChaviTynkielrot"
           git tag $PACKAGE_A_VERSION 
           git tag $PACKAGE_B_VERSION 
           git tag $PACKAGE_C_VERSION 
